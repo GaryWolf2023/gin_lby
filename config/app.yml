@@ -1,0 +1,13 @@
+sql:
+  name: "root"
+  password: "123456"
+  port: "8976"
+  dns: "127.0.0.1"
+  database: "go_lby"
+server:
+  port: "8888"
+  url: "192.168.0.3"
+app:
+  name: "lby_go_app"
+  version: "1.0.0"
+  description: "lby创建的go——app"
