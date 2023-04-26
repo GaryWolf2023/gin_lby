@@ -6,7 +6,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type BaseController struct{}
+type BaseController struct {
+	// 定义了一个结构体，方便继承
+}
 
 func (base BaseController) Success(ctx *gin.Context, data interface{}) {
 	ctx.JSON(http.StatusOK, gin.H{
@@ -15,7 +17,7 @@ func (base BaseController) Success(ctx *gin.Context, data interface{}) {
 		"msg":  "success",
 	})
 }
-func (base BaseController) Error(ctx *gin.Context) {
+func (base BaseController) Error404(ctx *gin.Context) {
 	ctx.JSON(http.StatusNotFound, gin.H{
 		"code": -1,
 		"msg":  "404 Not Found",

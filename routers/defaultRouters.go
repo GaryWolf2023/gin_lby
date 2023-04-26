@@ -1,13 +1,17 @@
 package routers
 
 import (
+	"fmt"
+
 	"github.com/gin-gonic/gin"
 )
 
 func DefaultRouters(r *gin.Engine) {
 	// 基本上所有的路由必须使用middleware.Init()中间件来判断登陆状态
 	// 定义一个路由组使用Group
-	r.GET("/", func(ctx *gin.Context) {
+	r.GET("/", func(c *gin.Context) {
+		fmt.Println("欢迎来到gin")
+	}, func(ctx *gin.Context) {
 		// ctx.String(200, "欢迎来到gin")
 		ctx.JSON(200, map[string]interface{}{
 			"code": 0,
