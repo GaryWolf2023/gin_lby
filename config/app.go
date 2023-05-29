@@ -7,6 +7,7 @@ import (
 )
 
 var ViperMap map[string]string
+var viperConfig *viper.Viper
 
 func InitConfig() {
 	defer func() {
@@ -15,11 +16,22 @@ func InitConfig() {
 		}
 	}()
 	// 获取配置文件
-	viper.SetConfigName("app")    //指定配置文件的文件名称(不需要指定配置文件的扩展名)
-	viper.AddConfigPath("config") //指定配置文件所在的路径
-	err := viper.ReadInConfig()   //读取配置文件
+	viperConfig = viper.New()
+	viperConfig.AddConfigPath("./config/") //指定配置文件所在的路径
+	viperConfig.SetConfigName("app")
+	viperConfig.SetConfigType("yaml")
+	err := viperConfig.ReadInConfig() //读取配置文件
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(viper.Get("sql"))
+	// fmt.Println("-----------------------------------", viperConfig.Get("database"))
+	// fmt.Println("+++++++++++++++++++++++++++++++++==", viperConfig.Get(""))
+	//获取所有配置信息
+	// allsetting := viperConfig.AllSettings()
+	// fmt.Println("****************************************", allsetting)
+}
+
+// 传入对应的key，获取对应的value
+func GetConfig(key string) interface{} {
+	return viperConfig.Get(key)
 }
