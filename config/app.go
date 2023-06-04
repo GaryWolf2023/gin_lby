@@ -7,7 +7,7 @@ import (
 )
 
 var ViperMap map[string]string
-var viperConfig *viper.Viper
+var ViperConfig *viper.Viper
 
 func InitConfig() {
 	defer func() {
@@ -16,22 +16,22 @@ func InitConfig() {
 		}
 	}()
 	// 获取配置文件
-	viperConfig = viper.New()
-	viperConfig.AddConfigPath("./config/") //指定配置文件所在的路径
-	viperConfig.SetConfigName("app")
-	viperConfig.SetConfigType("yaml")
-	err := viperConfig.ReadInConfig() //读取配置文件
+	ViperConfig = viper.New()
+	ViperConfig.AddConfigPath("./config/") //指定配置文件所在的路径
+	ViperConfig.SetConfigName("app")
+	ViperConfig.SetConfigType("yaml")
+	err := ViperConfig.ReadInConfig() //读取配置文件
 	if err != nil {
 		panic(err)
 	}
-	// fmt.Println("-----------------------------------", viperConfig.Get("database"))
-	// fmt.Println("+++++++++++++++++++++++++++++++++==", viperConfig.Get(""))
+	// fmt.Println("-----------------------------------", ViperConfig.Get("database"))
+	// fmt.Println("+++++++++++++++++++++++++++++++++==", ViperConfig.Get(""))
 	//获取所有配置信息
-	// allsetting := viperConfig.AllSettings()
+	// allsetting := ViperConfig.AllSettings()
 	// fmt.Println("****************************************", allsetting)
 }
 
 // 传入对应的key，获取对应的value
 func GetConfig(key string) interface{} {
-	return viperConfig.Get(key)
+	return ViperConfig.Get(key)
 }

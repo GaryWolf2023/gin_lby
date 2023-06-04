@@ -5,8 +5,7 @@ database:
   dns: "127.0.0.1"
   database: "go_lby"
 server:
-  port: "10011"
-  url: "192.168.0.3"
+  port: "8888"
 app:
   name: "lby_go_app"
   version: "1.0.0"
