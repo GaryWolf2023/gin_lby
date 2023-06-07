@@ -1,0 +1,37 @@
+info:
+  contact: {}
+  description: Gin_one 学习记录关于go/gin的
+  title: Gin_one API文档
+  version: 0.0.1
+paths:
+  /api/v1/public/user/login:
+    post:
+      consumes:
+      - application/json
+      description: 用户登录
+      parameters:
+      - description: 用户名
+        in: query
+        name: username
+        required: true
+        type: string
+      - description: 密码
+        in: query
+        name: password
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":200,"data":{"token":},"msg":"登录成功"}'
+          schema:
+            type: string
+        "401":
+          description: '{"code":400,"msg":"登录失败"}'
+          schema:
+            type: string
+      summary: 用户登录
+      tags:
+      - 用户管理
+swagger: "2.0"

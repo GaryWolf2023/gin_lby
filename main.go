@@ -1,14 +1,15 @@
 package main
 
 import (
-	"Gin_one/config"
-	"Gin_one/routers"
-	"Gin_one/sql"
+	"Gin_one/cmd"
 )
 
+// @title Gin_one API文档
+// @description Gin_one 学习记录关于go/gin的
+// @version 0.0.1
 func main() {
-	config.InitConfig()
-	sql.InitSql()
-	// 初始化路由并创建一个网络服务
-	routers.InitRouters()
+
+	defer cmd.Close()
+	cmd.Start()
+
 }
