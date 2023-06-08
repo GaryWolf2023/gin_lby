@@ -1,3 +1,5 @@
+mode:
+  development: true
 database:
   name: "root"
   password: "123456"
@@ -10,3 +12,7 @@ app:
   name: "lby_go_app"
   version: "1.0.0"
   description: "lby创建的go——app"
+log:
+  maxSize: 1 # 单个日志文件最大容量，单位：MB
+  maxBackups: 10 # 旧文件保留的最大个数
+  maxAge: 30 # 旧文件保留的最大天数

@@ -3,6 +3,7 @@ package routers
 import (
 	"Gin_one/config"
 	docs "Gin_one/docs"
+	"Gin_one/global"
 	"context"
 	"fmt"
 	"log"
@@ -58,6 +59,7 @@ func InitRouters() {
 
 	// 启动服务
 	// serverError := r.Run(fmt.Sprintf(":%s", serverPort))
+	global.Logger.Info(fmt.Sprintln("success listen server"))
 	server := &http.Server{
 		Addr:    fmt.Sprintf(":%s", serverPort),
 		Handler: r,
@@ -81,8 +83,9 @@ func InitRouters() {
 	// } else {
 	// 	fmt.Println("启动服务成功 端口:", serverPort)
 	// }
+
 	stop()
-	// TODO: 记录日志---服务停止成功
+	global.Logger.Info(fmt.Sprintln("success stop server"))
 	log.Println("shutting down gracefully, press Ctrl+C again to force")
 
 	// 创建一个5秒的超时上下文，超时后会强制关闭服务
@@ -90,10 +93,10 @@ func InitRouters() {
 	defer cancel()
 
 	if err := server.Shutdown(ctx); err != nil {
-		// TODO: 记录日志---服务停止失败
+		global.Logger.Error(fmt.Sprintf("Stop Server Error %s", err.Error()))
 		log.Fatal("Server forced to shutdown: ", err)
 	}
-	// TODO: 记录日志---服务停止成功
+	global.Logger.Info(fmt.Sprintln("success exit server"))
 	log.Println("Server exiting")
 }
 
