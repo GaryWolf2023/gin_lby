@@ -1,0 +1,56 @@
+{"level":"ERROR","time":"2023-07-03 22:42:24","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 22:42:24","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 22:50:53","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"ERROR","time":"2023-07-03 22:50:53","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 22:50:53","msg":"success listen server\n"}
+{"level":"INFO","time":"2023-07-03 22:50:53","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 22:57:11","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 22:57:11","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 22:57:11","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 22:57:11","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 22:59:09","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"ERROR","time":"2023-07-03 22:59:09","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 22:59:09","msg":"success listen server\n"}
+{"level":"INFO","time":"2023-07-03 22:59:09","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:01:18","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:01:18","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:01:18","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:01:18","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:16:11","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:16:11","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:16:11","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:16:11","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:17:02","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:17:02","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:18:01","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"ERROR","time":"2023-07-03 23:18:01","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:18:01","msg":"success listen server\n"}
+{"level":"INFO","time":"2023-07-03 23:18:01","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:18:30","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:18:30","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:18:30","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:18:30","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:19:20","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:19:20","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:19:20","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:19:20","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:19:41","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:19:41","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:19:41","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:19:41","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:20:03","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:20:03","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:20:03","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:20:03","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:20:05","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:20:05","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:22:37","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:22:37","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:27:19","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:27:19","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:27:47","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:27:47","msg":"success listen server\n"}
+{"level":"ERROR","time":"2023-07-03 23:27:47","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-03 23:27:47","msg":"success listen server\n"}
+{"level":"INFO","time":"2023-07-04 00:35:11","msg":"success stop server\n"}
+{"level":"INFO","time":"2023-07-04 00:35:11","msg":"success exit server\n"}

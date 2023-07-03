@@ -6,7 +6,6 @@ import (
 	"github.com/spf13/viper"
 )
 
-var ViperMap map[string]string
 var ViperConfig *viper.Viper
 
 func InitConfig() {
@@ -24,14 +23,4 @@ func InitConfig() {
 	if err != nil {
 		panic(err)
 	}
-	// fmt.Println("-----------------------------------", ViperConfig.Get("database"))
-	// fmt.Println("+++++++++++++++++++++++++++++++++==", ViperConfig.Get(""))
-	//获取所有配置信息
-	// allsetting := ViperConfig.AllSettings()
-	// fmt.Println("****************************************", allsetting)
-}
-
-// 传入对应的key，获取对应的value
-func GetConfig(key string) interface{} {
-	return ViperConfig.Get(key)
 }

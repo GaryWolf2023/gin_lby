@@ -1,10 +1,9 @@
 package routers
 
 import (
+	"Gin_one/controllers"
 	"Gin_one/middlewares"
 	"Gin_one/service"
-
-	"Gin_one/controllers/admin"
 
 	"github.com/gin-gonic/gin"
 )
@@ -12,10 +11,10 @@ import (
 func RoleRouters(r *gin.Engine) {
 	roleRouters := r.Group("/role", middlewares.Init)
 	{
-		roleRouters.GET("/api/list", admin.RoleAdminController{}.List)
-		roleRouters.POST("/api/create", admin.RoleAdminController{}.Create)
-		roleRouters.PUT("/api/modify", admin.RoleAdminController{}.Modify)
-		roleRouters.DELETE("/api/delete", admin.RoleAdminController{}.Delete)
+		roleRouters.GET("/api/list", controllers.RoleAdminController{}.List)
+		roleRouters.POST("/api/create", controllers.RoleAdminController{}.Create)
+		roleRouters.PUT("/api/modify", controllers.RoleAdminController{}.Modify)
+		roleRouters.DELETE("/api/delete", controllers.RoleAdminController{}.Delete)
 		roleRouters.GET("/api/search", service.SearchRole)
 		roleRouters.GET("/menu/list", func(ctx *gin.Context) {
 			ctx.String(200, "菜单权限列表")

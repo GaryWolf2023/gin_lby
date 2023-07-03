@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"Gin_one/controllers/user"
+	"Gin_one/controllers"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -10,12 +10,15 @@ import (
 func InitUserRouters() {
 	// middlewares.Init这个中间件写在这个地方
 
-	UserController := user.NewUserController()
+	UserController := controllers.NewUserController()
 
 	RegisterRouter(func(rgPublic *gin.RouterGroup, rgPrivate *gin.RouterGroup) {
 		rgPublic.POST("/login", UserController.UserLogin)
 
-		userPrivate := rgPrivate.Group("/user")
+		userPrivate := rgPrivate.Group("/user").Use(func() gin.HandlerFunc {
+			return func(c *gin.Context) {}
+		}())
+
 		userPrivate.GET("", func(c *gin.Context) {
 			c.AbortWithStatusJSON(http.StatusOK, gin.H{
 				"data": []map[string]interface{}{
