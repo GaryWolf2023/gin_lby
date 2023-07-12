@@ -1,0 +1,2 @@
+{"level":"ERROR","time":"2023-07-12 16:22:06","msg":"dial tcp 127.0.0.1:8976: connectex: No connection could be made because the target machine actively refused it., dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-12 16:22:06","msg":"success listen server\n"}
