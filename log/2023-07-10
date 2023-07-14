@@ -1,0 +1,9 @@
+{"level":"ERROR","time":"2023-07-10 16:40:13","msg":"dial tcp 127.0.0.1:8976: connectex: No connection could be made because the target machine actively refused it., dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-10 16:40:13","msg":"success listen server\n"}
+{"level":"INFO","time":"2023-07-10 16:41:23","msg":"success stop server\n"}
+{"level":"ERROR","time":"2023-07-10 16:41:48","msg":"Error 1049 (42000): Unknown database 'lbygin', dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-10 16:41:48","msg":"success listen server\n"}
+{"level":"INFO","time":"2023-07-10 16:43:00","msg":"success stop server\n"}
+{"level":"ERROR","time":"2023-07-10 16:43:24","msg":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-07-10 16:43:24","msg":"success listen server\n"}
+{"level":"INFO","time":"2023-07-10 18:00:17","msg":"success stop server\n"}
