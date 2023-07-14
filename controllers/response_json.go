@@ -26,6 +26,7 @@ func HttpResponse(ctx *gin.Context, status int, resp ResponseJson) {
 	ctx.AbortWithStatusJSON(resp.Status, resp)
 }
 
+// BaseStatusReturn 用于返回不同的状态码
 func BaseStatusReturn(resp ResponseJson, notDefailtStatus int) int {
 	if resp.Status == 0 {
 		return notDefailtStatus

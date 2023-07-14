@@ -9,10 +9,13 @@ import (
 	"log"
 	"net/http"
 	"os/signal"
+	"strings"
 	"syscall"
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin/binding"
+	"github.com/go-playground/validator/v10"
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
@@ -43,8 +46,10 @@ func InitRouters() {
 	rgPrivate := r.Group("/api/v1")
 
 	// 调用这个方法让所有的路由都存储在gFnRouter中
-	InitBasePlatformRouter(r)
+	initBasePlatformRouter(r)
 
+	// 在加载路由之前，注册自定义验证器
+	registerValidator()
 	// 加载所有的路由将所有的路由注册到路由组（rgPublic，rgPrivate）中
 	for _, registerRouter := range gFnRouter {
 		registerRouter(rgPublic, rgPrivate)
@@ -101,7 +106,21 @@ func InitRouters() {
 }
 
 // 初始化所有的路由
-func InitBasePlatformRouter(r *gin.Engine) {
+func initBasePlatformRouter(r *gin.Engine) {
 	// r.Use(middlewares.Cors())
 	InitUserRouters()
+}
+
+func registerValidator() {
+	// 注册自定义验证器
+	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
+		_ = v.RegisterValidation("first_name_a", func(fl validator.FieldLevel) bool {
+			if value, ok := fl.Field().Interface().(string); ok {
+				if value != "" && strings.Index(value, "a") == 0 { // 字符串不为空并且以a开头的话就返回true
+					return true
+				}
+			}
+			return false
+		})
+	}
 }
